@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+     >
+
+	<RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/window_top_bg" >
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/window_top_logo"
+                     	/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+			android:layout_alignParentBottom="true"
+	        android:background="#000000"
+	        android:orientation="horizontal">
+	    </LinearLayout>
+	   
+      <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="3dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/gw_bt_find_pwd"
+        android:src="@drawable/icon_wjmm"
+        />  
+        
+      <TextView
+        android:id="@+id/gw_bt_find_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:text="找回密码"
+        android:textColor="@color/text_gray"
+        android:textSize="15dp"
+        android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/gw_bt_no_regist_quick_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+        android:layout_marginTop="10dp"    
+        android:layout_below="@+id/relativelayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/redbtn_style"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+              android:textColor="@color/white"
+        android:text="一键登录"
+              android:textSize="20dp"
+         >
+    </Button>
+
+    <Button
+        android:id="@+id/gw_bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gw_bt_no_regist_quick_login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/redbtn_style"
+                android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="登   录"
+              android:textColor="@color/white"
+                            android:textSize="20dp"
+         >
+
+  </Button>
+  
+  <Button
+        android:id="@+id/gw_bt_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gw_bt_login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yellowbtn_style"
+                android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="注  册"
+        />
+
+  
+    <ImageView 
+      android:id="@+id/mid_mark"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+      android:id="@+id/gw_third_1_login_button"
+      android:layout_width="wrap_content"
+      android:layout_height="45dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignRight="@+id/mid_mark"
+      android:background="@color/third_gray"
+	 >
+     <ImageView
+      android:id="@+id/gw_third_1_login_button_iv"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_toLeftOf="@+id/gw_third_1_login_button_tv"
+      android:layout_centerVertical="true"
+      /> 
+        
+     <TextView
+      android:id="@+id/gw_third_1_login_button_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      />
+    </RelativeLayout>
+    
+	<RelativeLayout
+      android:id="@+id/gw_third_2_login_button"
+      android:layout_width="wrap_content"
+      android:layout_height="45dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignLeft="@+id/mid_mark"
+      android:background="@color/third_gray"
+	 >
+     <ImageView
+      android:id="@+id/gw_third_2_login_button_iv"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_toLeftOf="@+id/gw_third_2_login_button_tv"
+      android:layout_centerVertical="true"
+      /> 
+     <TextView
+      android:id="@+id/gw_third_2_login_button_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+       />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

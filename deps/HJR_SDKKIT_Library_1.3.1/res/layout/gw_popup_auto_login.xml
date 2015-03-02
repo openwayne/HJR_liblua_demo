@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="200dp"
+    android:background="@color/white"
+     >
+     
+    
+    	<RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/window_top_bg" >
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/window_top_logo"
+                     	/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+			android:layout_alignParentBottom="true"
+	        android:background="#000000"
+	        android:orientation="horizontal">
+	    </LinearLayout>
+	   
+      <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="3dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/gw_bt_switch"
+        android:src="@drawable/icon_qhzh"
+        />  
+        
+      <TextView
+        android:id="@+id/gw_bt_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:text="切换账号"
+        android:textColor="@color/text_gray"
+        android:textSize="15dp"
+        android:visibility="visible" />
+      
+      
+  	<ImageView
+        android:id="@+id/gw_bt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/close_hl"
+        android:visibility="gone"
+	/>
+
+    </RelativeLayout>
+    
+    
+
+    
+    <RelativeLayout 
+	    android:id="@+id/loginTip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:layout_alignLeft="@+id/relativelayout1"
+	    android:layout_alignRight="@+id/relativelayout1"
+	    android:layout_below="@+id/relativelayout1"
+	    android:layout_margin="30dp"
+	    android:background="@drawable/button_red_nor"
+     >
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_centerVertical="true"
+            android:background="@anim/progress_round"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+             />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toLeftOf="@id/imageView1"
+             />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:scaleType="fitXY"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_user_nor" />
+        
+	</RelativeLayout>
+
+
+</RelativeLayout>

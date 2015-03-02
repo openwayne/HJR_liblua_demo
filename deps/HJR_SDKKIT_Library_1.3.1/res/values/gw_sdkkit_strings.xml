@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="company_name">游戏工场</string>
+    <string name="sending">数据加载中...</string>
+    <string name="choose_account_login">请选择账号登录</string>
+    <string name="network_error">网络好像有问题</string>
+    <string name="autologin_qqweibo_error">sorry #_#  一键登录功能完善中 敬请期待</string>
+    <string name="not_have_sdcard">没有SD卡</string>
+    <string name="ding5_account">账\u0020\u0020\u0020\u0020\u0020\u0020\u0020号</string>
+    <string name="password">密\u0020\u0020\u0020\u0020\u0020\u0020\u0020码</string>
+    <string name="gw_email">邮\u0020\u0020\u0020\u0020\u0020\u0020\u0020箱</string>
+    <string name="password_confirm">重新输入</string>
+    <string name="ding5_account_hint">请在此输入账号</string>
+    <string name="other_account_login">已有帐号,其它帐号登录</string>
+    
+    
+    <string name="password_hint">请输入账号密码</string>
+    <string name="account_hint">请在此输入注册账号</string>
+    <string name="account_reg">帐号注册</string>
+    <string name="password_confirm_hint">请再次输入账号密码</string>
+    <string name="login">立即登录</string>
+    <string name="regist">注\u0020\u0020\u0020\u0020册</string>
+    <string name="third_login_weibo">新浪登陆</string>
+    <string name="third_login_qq">QQ登陆</string>
+    <!-- <string name="account_not_null">账号不能为空</string -->
+    <string name="account_not_null">请输入账户名及密码</string>
+    <string name="password_not_null">请输入账户名及密码</string>
+    <string name="password_confirm_not_null">确认密码不能为空</string>
+    <string name="login_success">登录成功</string>
+    <string name="regist_success">注册成功！</string>
+    <string name="password_different_error">两次输入的密码不一致</string>
+    <string name="password_yes">yes</string>
+     <string name="password_no">no</string>
+    <string name="password_length_error">密码长度6-20个字符字母区分大小写不能含有空格</string>
+    <string name="isexit">是否退出?</string>
+    <string name="isexit_currentpage">是否退出此页面?</string>
+    <string name="exit_webview">退出页面</string>
+    <string name="back_webview">返回页面</string>
+    <string name="determine">确定</string>
+    <string name="newsbox_cancal">取消</string>
+    <string name="login_alert">使用此功能需要进行登录操作，是否现在登录？</string>
+    <string name="login_cancel">过一会</string>
+    <string name="recharge_channel">充值渠道</string>
+    <string name="order_form">订单填写</string>
+    <string name="order_confirm">订单确认</string>
+    <string name="order_fulfill">完成</string>
+    <string name="value_game_text">充值游戏:</string>
+    <string name="value_game_text_land">充值游戏  :</string>
+    <string name="value_user_text">充值账号  :</string>
+    <string name="value_user_text_land">充值账号  :</string>
+    <string name="value_channel_text">充值渠道:</string>
+    <string name="server_select">区服选择</string>
+    <string name="recharge_money">充值金额</string>
+    <string name="fill_in_money">填写充值金额</string>
+    <string name="money">元</string>
+    <string name="money_select">充值金额选择</string>
+    <string name="recharge_card_info">充值卡信息</string>
+    <string name="sequence_number">序列号  :</string>
+    <string name="sequence_password">密码  :</string>
+    <string name="total_money">总计金额：</string>
+    <string name="order_success">充值成功!</string>
+    <string name="order_fail">充值失败!</string>
+    <string name="order_success_title">充值成功</string>
+    <string name="order_fail_title">充值失败</string>
+    <string name="reminder">温馨提示</string>
+    <string name="reminder_1">1.充值中遇到问题,请联系客服QQ:</string> 
+    <string name="reminder_2">2.确认订单并提交成功后会跳入第三方支付网站。</string>
+    <string name="reminder_3_1">3.第三方支付可能存在延时，请在扣费成功后耐心等待。\n不要反复操作，否则无法退还您的费用。</string>
+    <string name="reminder_3_2">不要反复操作，否则无法退还您的费用。</string>
+    <string name="email_text">Email地址（此项为选填）</string>
+    <string name="verification_code">验证码</string>
+    <string name="please_input_verification_code">验证码</string>
+    <string name="order_code">订单号：</string>
+    <string name="recharge_game">充值游戏：</string>
+    <string name="recharge_account">充值账号：</string>
+    <string name="recharge_server">充值区服：</string>
+    <string name="recharge_channel_text">充值渠道：</string>
+    <string name="recharge_amount">支付金额：</string>
+    <string name="recharge_email">邮箱地址：</string>
+    <string name="recharge_time">下单时间：</string>
+    <string name="order_error">错误：</string>
+    <string name="bottom_text">&#169; GAMEWORKS Interactive</string>
+    <string name="next">下一步</string>
+    <string name="order_third">第三方支付</string>
+    <string name="game_server_select">服务器选择</string>
+    <string name="last_login_text">上次登录：</string>
+    <string name="recommend_server">推荐服务器</string>
+	<string name="country_select">国家选择</string>
+	<string name="mail_not_null">请输入邮箱</string>
+	<string name="confirm_password_not_null">请输入确认密码</string>
+	<string name="email_format_error">请输入正确的邮箱</string>
+	<string name="account_format_error">请输入正确的邮箱/手机</string>
+	<string name="exists_account">该邮箱/手机号已经注册为平台账号</string>
+	<string name="account_input_tip">请输入邮箱/手机号</string>
+	
+	
+	
+	<string name="password_format_error">请输入6&#8211;16位字符(字母、数字或下划线)</string>
+	<!-- <string name="password_format_error">请输入6至16位的密码，密码为(字母、数字或下划线)</string> -->
+	<string name="home">主页</string>
+    <string name="friends">好友</string>
+    <string name="recommend">推荐</string>
+    <string name="start_game">进入游戏</string>
+    <string name="swich_account">切换账号</string>
+    <string name="register_mail_text">注册邮箱 </string>
+    <string name="register_mail_hint">请输入您的常用邮箱</string>
+    <string name="new_password_text">新\u0020\u0020密\u0020\u0020码</string>
+    <string name="new_password_hint">请输入6~16位数字或字母</string>
+    <string name="new_password_hint2">请设置新密码（6~16位字符）</string>
+    <string name="original_password_hint">请输入原始密码</string>
+    <string name="input_again">密码确认</string>
+    <string name="new_password_again">请输入密码确认</string>
+    <string name="input_again_hint">请重复输入</string>
+    <string name="confirm_hint">验证码会以邮件形式发送到您的邮箱，请您到邮箱获取</string>
+    <string name="get_code">获取验证码</string>
+     <string name="code_num_error">验证码位数有误</string>
+    <string name="fill_code">请输入验证码</string>
+    <string name="send_success">验证码已发送</string>
+    <string name="send_success2">验证成功！</string>
+    <string name="send_success3">密码修改成功！</string>
+    <string name="get_code_hint">请输入所获得的验证码</string>
+    <string name="verification_code_hint">请输入所获得的验证码</string>
+    <string name="verification_hint">验证码的发送可能由于网络原因延时发送，请耐心等待</string>
+	<string name="login_text">帐号登录 </string>
+    <string name="login_hint">请输入您的常用邮箱</string>
+    <string name="register_password_text">密\u0020\u0020\u0020\u0020\u0020\u0020\u0020码 </string>
+    <string name="register_password_hint">请输入6~16位新密码</string>
+    <string name="confirm_password_text">确认密码 </string>
+    <string name="confirm_password_hint">请重新输入密码</string>
+    <string name="confirm">确\u0020\u0020定</string>
+    
+    <string name="gw_recharge_order_title">充值标题:</string>
+    <string name="gw_recharge_order_title_land">充值标题  :</string>
+    <string name="gw_tv_game_server_title">充值区服  :</string>
+    <string name="gw_tv_game_server_title_land">充值区服  :</string>
+    <string name="gw_tv_pay_money_title">充值金额  :</string>
+    <string name="gw_tv_pay_money_title_land">充值金额  :</string>
+    <string name="gw_tv_charge_title">金额确认:</string>
+    <string name="gw_tv_charge_title_land">金额确认  :</string>
+    <string name="rmb_sign">¥</string> <!-- 人民币符号 -->
+    <string name="gw_tv_recharge_method">充值方式</string>
+    <string name="gw_must_larger_recharge_money">不能小于充值金额</string>
+    <string name="gw_overstep_money_info">超出\"充值金额\"的部分将会返还到您的游戏账户中。</string>
+    <string name="gw_equal">等于</string>
+    
+    <string name="gw_business_info_submit">您的交易已提交 !</string>
+    <string name="gw_business_info_complete">您的交易已完成 !</string>
+    <string name="gw_business_info_failed">您的交易失败 !</string>
+    <string name="gw_notice_info">提示信息</string>
+    <string name="gw_notice_info_wait">请关闭当前页面, 返回游戏查看是否到账 。如未立即到账, 请耐心等待几分钟 !</string>
+    <string name="gw_notice_info_success">充值已成功 !</string>
+    <string name="gw_consume_money">消费金额  :</string>
+    <string name="gw_confirm_money">实收金额  :</string>
+    
+    <string name="gw_select_charge_faceMoney">请选择充值金额\u0020:</string>
+    <string name="gw_recharge_now">充值</string>
+    <string name="gw_recharge_faceMoney_notice">充值金额应与\"卡面金额\"一致,否则可能导致支付失败及财产损失。</string>
+    <string name="gw_cardNum_empty_notice">请输入充值卡序列号</string>
+    <string name="gw_cardPwd_empty_notice">请输入充值卡密码</string>
+    <string name="gw_cardNum_chinese_notice">充值卡序列号只能包含数字或字母！</string>
+    <string name="gw_cardPwd_chinese_notice">充值卡密码只能包含数字或字母！</string>
+    <string name="gw_faceMoney_less_rechargeMoney">充值卡面额少于充值所需金额 !</string>
+    
+    <string name="gw_no_regist_quick_login">无需注册, 快速登录</string>
+    <string name="gw_quick_login">一键登录</string>
+    <string name="gw_please_input_email">请输入登录邮箱</string>
+    <string name="gw_please_input_new_psw">请输入新密码</string>
+    <string name="gw_please_input_regist_email">请输入注册邮箱</string>
+    <string name="gw_please_input_regist_account">邮箱/手机号</string>
+    <string name="gw_please_findPWD_input_regist_email">请输入您的注册邮箱</string>
+    <string name="gw_please_input_password">请输入密码</string>
+    
+    <string name="gw_please_regist_password">请设置密码</string>
+    <string name="gw_please_regist_password2">设置密码</string>
+    
+    <string name="gw_please_input_password_16">请输入6&#045;16位密码</string>
+    <string name="gw_find_password">忘记密码</string>
+    <string name="gw_back"> 返\u0020\u0020\u0020\u0020回 </string>
+    <string name="gw_new_password"> 新密码</string>
+    <string name="gw_new_password_repeat"> 密码确认</string>
+    <string name="gw_submit"> 提\u0020\u0020\u0020\u0020交</string>
+    <string name="gw_improve_account_info">请完善您的账号资料,以确保您的账号安全</string>
+    <string name="gw_jump_over">跳\u0020\u0020\u0020\u0020过</string>
+    <string name="gw_bind">绑\u0020\u0020\u0020\u0020定</string>
+    
+    <string name="gw_full">全部</string>
+    <string name="gw_done">已完成</string>
+    <string name="gw_undone">未完成</string>
+    <string name="gw_game">游戏 :</string>
+    <string name="gw_server">区服 :</string>
+    <string name="gw_recharge_history">充值历史</string>
+    <string name="gw_load_more">点击查看更多</string>
+    <string name="gw_loading">加载中&#046;&#046;&#046;请稍后</string>
+    <string name="gw_recharge_time">充值时间</string>
+    <string name="gw_recharge_orderid">订单号</string>
+    <string name="gw_recharge_amount">金额</string>
+    <string name="gw_money_too_large">您输入的数值过大,请重新输入!</string>
+    
+    <string name="gw_user_center">用户中心</string>
+    <string name="gw_center_account">账号 :</string>
+    <string name="gw_user_center_recharge">充值</string>
+    <string name="gw_user_center_switch_account">注销账号</string>
+    <string name="gw_user_center_recharge_history">充值历史</string>
+    <string name="gw_user_center_change_password">修改密码</string>
+    <string name="gw_user_center_change_password_mao">修改密码 :</string>
+    <string name="gw_user_center_recharge_help">充值帮助</string>
+    <string name="gw_current_password">请输入旧密码</string>
+    <string name="gw_new_password2">请输入新密码</string>
+    <string name="gw_password_confirm">密码确认 :</string>
+    <string name="gw_submit2">提\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020交</string>
+    <string name="gw_change_pwd_success">密码修改成功！</string>
+    <string name="gw_current_pwd_error">当前密码错误</string>
+    <string name="gw_current_pwd_must_equal">两次输入的密码不一致</string>
+    <string name="gw_please_input_pwd_current">请输入原密码</string>
+    <string name="gw_please_input_pwd_new">请输入新密码</string>
+    <string name="gw_please_input_pwd_confirm">请输入密码确认</string>
+    <string name="gw_input_pwd_current">请输入当前密码</string>
+    <string name="gw_input_pwd_6_16">请输入6&#045;16位密码</string>
+    <string name="gw_input_pwd_repeat">请输入密码确认</string>
+    <string name="gw_input_pwd_current_error">原密码错误</string>
+    
+    <string name="gw_help">帮助</string>
+    <string name="gw_zhifubao">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020通过网上银行、网点和消费卡充值到支付宝账户的款项即为支付宝账户余额，交易时只需输入支付宝的账号和支付密码即可完成付款。\n</string>
+    <string name="gw_pay_fast">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020快捷支付是支付宝联合各大银行推出的全新最安全、轻松的支付方式。付款时无需登录网上银行，也无需开通网银功能，只需输入银行卡或信用卡卡号、姓名、身份证号、手机号即可完成付款。\n
+【特点】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020安全：3大安全体系设计，让您安心购物\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020便捷：3步在线支付流程，让您轻松购物\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020保障：72小时完成赔付，让您放心购物\n</string>
+    <string name="gw_shenzhouxing">【支持卡种】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020卡号17位、密码18位的阿拉伯数字。\n【支持面额】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u002010，20，30，50，100，200，300，500，1000元\n【重要提示】\n
+\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020请务必使用与此面额相同的移动充值卡，否则会导致支付不成功，或支付金额丢失（使用面额100元的移动充值卡但选择50元，高于50元部分不返还；使用50元卡但选择100元，支付失败，50元不返还。）不支持彩铃充值卡和短信充值卡，选择任何面额彩铃充值卡，将不予退还任何金额。\n</string>
+    <string name="gw_china_unicom">【支持卡种】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020联通全国卡，卡号15位阿拉伯数字，密码19位阿拉伯数字。\n
+                               【支持面额】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u002020、30、50、100、300、500元\n【重要提示】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020请务必使用与您选择的面额相同的联通充值卡进行支付，否则引起的交易失败交易金额不予退还。\n
+           \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 如 &#058; 选择50元面额但使用100元卡支付，则系统认为实际支付金额为50元，高于50元部分不予退还&#059;选择50元面额但使用30元卡支付则系统认为支付失败，30元不予退还。\n
+    </string>
+   <string name="gw_cmct">【支持卡种】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+                                   中国电信充值付费卡卡号19位，密码18位的阿拉伯数字。\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+                                   目前只支持电信全国卡和广东卡，充值卡序列号第四位为\"1\"的卡为全国卡，为\"2\"的则为地方卡。\n
+                                  【支持面额】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u002050，100元\n【重要提示】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+                                   请务必使用与您所选择的面额相同的电信卡进行支付,否则引起的交易失败或交易金额丢失，我方不予承担&#033;\n
+   </string>
+    <string name="gw_qq_card">【支持卡种】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+                                  全国各地Q币卡，卡号：9位的阿拉伯数字、密码：12位的阿拉伯数字。\n
+                                【支持面额】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u002010，15，20，30，60，100，200元\n【重要提示】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+                                请务必使用与您所选面额相同的Q币卡进行支付，否则您将承担因此而引起的交易失败或者交易金额丢失所造成的损失。\n
+    </string>
+    
+    <string name="gw_shengda_card">【支持卡种】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+                             卡号15位或16位的数字字母，密码8位或9位的阿拉伯数字。\n【支持面额】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+                              实卡面值:10,30,35,45,100,350,1000元\n
+                             【温馨提示】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020请使用卡号以CSC5、CS、S、CA、CSB、YA、YB、YC、YD、80133开头的\"盛大互动娱乐卡\"进行支付。\n
+    </string>
+    
+    <string name="gw_junnet_card">【支持卡种】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+卡号、密码都是16位的阿拉伯数字。\n
+【支持面额】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+10，15，30，50，100元\n
+【温馨提示】\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+不能使用特定游戏专属充值卡支付。特定游戏包括大唐风云、传说、蜗牛、猫扑一卡通、九鼎、雅典娜、山河等游戏。\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+在此使用过的骏网一卡通，卡内剩余J点只能在富汇易达合作商家进行支付使用。\n
+    </string>
+    
+    <string name="gw_mo9" >\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020如何使用mo9先玩后付？\n
+第1步：先玩\n
+\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020选择“mo9先玩后付”，输入你的手机号码，点击确认后，你的手机短信会在3秒内收到一个验证码，输入验证码后，你的游戏币就已购买成功了！同时，你的mo9账户已自动生成，mo9账户号就是你的手机号，mo9账户的初始登入密码将以短信形式发送到你的手机，你可随时登录mo9官网www.mo9.com查看你的账户详情。\n
+第2步：后付\n
+\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020你有充裕的7天时间登入mo9官网进行充值还款。在电脑上或手机上登入www.mo9.com （电脑上的充值还款方式比手机上更多），点击网站首页右上角的“充值还款”，即可对你的mo9账户（账户号即为你的手机号）进行快捷充值或还款；你也可以选择先登录你的mo9账户（账户号即为你的手机号，初始登录密码之前已发至你的手机），账户内可清楚查看你的消费记录、信用额度、账户余额、欠款额等信息，点击“充值”，即可进行对mo9账户进行充值或还款。\n
+    </string>
+    
+    <string name="gw_email_port">邮\u0020\u0020箱 </string>
+    <string name="gw_account_port">账\u0020\u0020号 </string>
+    <string name="gw_password_port">密\u0020\u0020码 </string>
+    <string name="gw_new_password_port">新密码</string>
+    <string name="gw_new_password_repeat_port">密码确认</string>
+    <string name="all_server">全部服务器</string>
+    <string name="temp_havenot_data">暂无数据</string>
+    <string name="remder_new_1_1">1、充值中遇到问题,请联系客服QQ:2844536100。</string>
+    <string name="remder_new_1_2">2844536100。</string>
+    <string name="remder_new_2_1">2、确认订单并提交成功后会跳入第三方支付网站。</string>
+    <string name="remder_new_3_1">3、第三方支付可能存在延时，请在扣费成功后耐心等待,不要反复操作，否则无法退还您的费用。</string>
+    <string name="remder_new_3_2">心等待,不要反复操作，否则无法退还您的费用。</string>
+    
+    <string name="remder_new1_1">1、充值中遇到问题,请联系客服QQ:</string>
+    <string name="remder_new1_2">2、确认订单并提交成功后会跳入第三方支付网站。</string>
+    <string name="remder_new1_3">3、第三方支付可能存在延时，请在扣费成功后耐心等待,不要反复操作，否则无法退还您的费用。</string>
+    <string name="card_only_number_or_letter">充值卡序列号只能包含数字或字母！</string>
+    <string name="pwd_only_number_or_letter">充值卡密码只能包含数字或字母！</string>
+    <string name="not_null_verify_code">验证码不能为空</string>
+    <string name="fill_money_text">填写金额  :</string>
+    <string name="get_game_currency_text">获得游戏币  :</string>
+    <string name="gw_please_input_card_num">请输入序列号</string>
+    <string name="gw_please_input_card_psd">请输入密码</string>
+    <string name="gw_please_input_othermoney">请输入填写金额</string>
+    <string name="gw_must_larger_money_10">充值金额不能小于10元</string>
+    <string name="gw_must_larger_money">充值金额不能小于原充值金额</string>
+    <string name="gw_must_larger_min_money">充值金额不能小于最小金额</string>
+    <string name="gw_no_zero_money">充值不能为0，请重新输入！</string>
+    <string name="gw_first_num_no_zero_money">充值首位不能为0，请重新输入！</string>
+    <string name="gw_must_num_money">只能输入数字，请重新输入！</string>
+    
+    <string name="gw_too_large_money">输入的金额过大！最大金额100万</string>
+    <string name="gw_third_result_success">充值成功</string>
+    <string name="gw_third_result_failed">充值失败</string>
+    <string name="gw_third_result_wait">充值已提交</string>
+    <string name="gw_third_result_success_info">充值已成功！请到游戏账户中查看！</string>
+    <string name="gw_third_result_ordernum">订单号：</string>
+    <string name="gw_third_result_failed_text">失败原因：</string>
+    <string name="gw_third_result_wait_info">充值已提交！请到游戏账户中查看！如未到账，请耐心等待几分钟。</string>
+    <string name="gw_agreement_text">您同意并遵守《XNEO平台用户协议》</string>
+    <string name="user_agreement_error">您没有同意平台用户协议，不能注册哦！</string>
+    <string name="gw_cardNum_incorrect_notice">请填写正确的充值卡序列号或密码</string>
+    <string name="platform_login_sending">正在用GAMEWORKS平台账号登录...</string>
+    <string name="account_prompt_text">系统已检测到GAMEWORKS平台账号，请选择账号登录游戏：</string>
+    <string name="account_prompt_text1">系统已检测到GAMEWORKS平台账号，</string>
+    <string name="account_prompt_text2">请选择账号登录游戏：</string>
+    <string name="auto_login_text">自动登录</string>
+    <string name="accountlist_login_text">登    录</string>
+    <string name="accountlist_login_text2">登录</string>
+    <string name="accountlist_regist_text">注   册</string>
+    <string name="accountlist_regist_text2">注册</string>
+    <string name="accountlist_immediately_regist_text">立即注册</string>
+    <string name="accountlist_other_text">其他账号登录</string>
+    <string name="accountlist_templogin_text">游客登录</string>
+    <string name="welcome_text">，欢迎登录！</string>
+    <string name="no_server_data">暂无服务器数据</string>
+    <string name="code_hava_chinese">验证码不能包含汉字</string>
+    <string name="reminder_text">温馨提示</string>
+    <string name="reminder_bind_text">您的帐号安全级别比较低,请立即对您的帐号进行绑定.</string>
+    <string name="bind_text">绑定</string>
+    <string name="reminder_psd_error_text">密码错误，是否重新输入密码进行登录？</string>
+    <string name="prompt_text">提示</string>
+    <string name="whether_to_modify_password">是否放弃修改密码?</string>
+    <string name="whether_to_find_password">是否放弃找回密码?</string>
+    <string name="find_password">找回密码</string>
+    <string name="bind_success_text">绑定成功！</string>
+    <string name="bind_account_text">绑定账号</string>
+    <string name="password_error_text">密码错误</string>
+    <string name="account_or_password_error_text">当前账户名或密码不正确</string>
+    <string name="input_card">请输入卡号</string>
+    <string name="input_pwd">请输入密码</string>
+
+    
+    
+    
+    <string name="dividing_line">|</string>
+     
+    <string name="sina_weibo">新浪微博</string>
+    <string name="tencent_weibo">腾讯微博</string>
+     
+    <string name="new_service">新服</string>
+    <string name="command_service">推荐</string>
+    <string name="maintenance_service">维护</string>
+    <string name="district">区   </string>
+    <string name="please_input_money">请输入预充值金额</string>
+    
+    <string name="cannot_get_paydatas">获取支付数据失败，请重新刷新该页面</string>
+    
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>  
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>  
+    <string name="xlistview_header_hint_loading">正在加载</string>  
+    <string name="xlistview_header_last_time">上次更新时间：</string>  
+    <string name="xlistview_footer_hint_normal">查看更多</string>  
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>  
+    
+    
+    
+    
+</resources>

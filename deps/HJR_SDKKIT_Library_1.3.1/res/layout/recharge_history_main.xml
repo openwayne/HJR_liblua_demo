@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/relativelaout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topbar_bg">"
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:src="@drawable/back_hl" />
+		<LinearLayout
+		    android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" 
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值记录—"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="20dp" />"
+		    <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"
+	            android:text="全部账单"
+	            android:textColor="#FFE100"
+	            android:layout_gravity="center_vertical"
+	            android:textSize="20dp" />
+		    <ImageButton
+		        android:id="@+id/imageView1"
+		      	android:layout_width="40dp"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/jiantou"
+	            android:background="#00000000"/>
+		</LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativelaout1"
+        android:background="#797979"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout1">
+        <com.gameworks.sdkkit.recharge.history.widget.XListView   
+	        android:id="@+id/listView1"  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="fill_parent"
+	        android:background="@color/white"
+	        >
+        </com.gameworks.sdkkit.recharge.history.widget.XListView>
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView_blank"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+		   	    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:text="亲，没有记录哦^_^"
+	            android:layout_gravity="center_horizontal"
+	            android:textColor="@color/black"
+	            android:textSize="20sp"
+	             /> 
+            </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

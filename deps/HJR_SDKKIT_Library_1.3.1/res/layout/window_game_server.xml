@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@color/transparent">
+    <RelativeLayout
+        android:id="@+id/ser_rl1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/s2"
+        android:layout_marginTop="40dp"
+         >
+         
+        <TextView
+            android:id="@+id/servicelist_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="最近登录"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+        />
+        <ListView
+            android:layout_below="@+id/servicelist_text1"
+            android:id="@+id/gv_last_serverlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+             >
+        </ListView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ser_rl1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/s3"
+        android:layout_marginTop="20dp"
+         >
+		<TextView
+            android:id="@+id/servicelist_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="所有区服"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+        />
+        <ListView
+            android:layout_below="@+id/servicelist_text2"
+            android:id="@+id/gv_serverlist"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:dividerHeight="1px"
+            android:divider="@color/white"
+            android:scrollbars="vertical"
+             >
+        </ListView>
+<!--         <RelativeLayout
+            android:layout_width="300dp"
+        	android:layout_height="50dp"
+        	android:layout_below="@id/servicelist_text2"
+            >
+            
+            
+        </RelativeLayout> -->
+        
+    </RelativeLayout>
+    
+
+
+</RelativeLayout>

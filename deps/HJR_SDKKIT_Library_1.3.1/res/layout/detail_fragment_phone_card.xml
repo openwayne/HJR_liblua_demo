@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rechage_sumbit"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/price_ll_root"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/info_bg"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/price_ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/my_money" />
+
+                        <TextView
+                            android:id="@+id/red_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#FFD217"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/num_yuanbao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="#B1C1DD"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/price_ll_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/recharge_account_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/icon_user_nor" />
+
+                    <TextView
+                        android:id="@+id/recharge_account_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/recharge_account_1"
+                        android:ems="10"
+                        android:singleLine="true"
+                        android:textColor="#888888"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/recharge_district_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/recharge_account_1"
+                        android:layout_below="@id/recharge_account_1"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/zhcz_fwq" />
+
+                    <TextView
+                        android:id="@+id/recharge_district_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/recharge_account_2"
+                        android:layout_below="@id/recharge_account_2"
+                        android:ems="10"
+                        android:singleLine="true"
+                        android:text="text2"
+                        android:textColor="#888888"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/recharge_detail_phonecard_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/price_ll_root"
+                android:layout_marginLeft="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+		                android:id="@+id/recharge_detail_phonecard_amount_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/select_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/list_nor" />
+
+                        <TextView
+                            android:id="@+id/input_tip_1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignLeft="@id/select_money"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="面值："
+                            android:textColor="#888888"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/select_money_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/input_tip_1_1"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="#F36618"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.gameworks.sdkkit.entry.view.CustomEditText
+                    android:id="@+id/input_card_num_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    emailType="@string/password_yes"
+                    hint="@string/input_card"
+                    icon="@drawable/icon_dhk_nor"
+                    android:background="@drawable/input_bg"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15dp" />
+
+                <com.gameworks.sdkkit.entry.view.CustomEditText
+                    android:id="@+id/input_pwd_num_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/input_card_num_et"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    hint="@string/input_pwd"
+                    icon="@drawable/icon_password_nor"
+                    password="@string/password_yes"
+                    android:background="@color/white"
+                    android:textColorHint="#D2D2D2"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_infos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recharge_detail_phonecard_amount"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/kf_list" >
+
+                <TextView
+                    android:id="@+id/customer_service_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="客服热线：18583256697"
+                    android:textColor="#888888"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/service_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/customer_service_phone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/customer_service_phone"
+                    android:text="服务时间：每天8:30-23:00"
+                    android:textColor="#888888"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rechage_sumbit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/rechage_sumbit_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/button_red_nor" />
+
+        <TextView
+            android:id="@+id/rechage_sumbit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rechage_sumbit_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

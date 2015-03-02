@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/login_input_layout"
+     >
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/window_top_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/accountlist_login_text"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+			android:layout_alignParentBottom="true"
+	        android:background="#000000"
+	        android:orientation="horizontal">
+	    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/gw_bt_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:src="@drawable/back_hl" />
+
+    </RelativeLayout>
+    
+    <com.gameworks.sdkkit.entry.view.CustomEditText
+        android:id="@+id/gw_self_et_account_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/relativelayout1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#D2D2D2"
+        emailType="@string/password_yes"
+        hint="@string/gw_please_input_regist_account"
+        icon="@drawable/icon_user_nor"
+        >
+	</com.gameworks.sdkkit.entry.view.CustomEditText>
+    
+
+    <com.gameworks.sdkkit.entry.view.CustomEditText
+        android:id="@+id/gw_self_et_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/gw_self_et_account_login"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#D2D2D2"
+        hint="@string/gw_please_input_password"
+        icon="@drawable/icon_password_nor"
+        password="@string/password_yes"
+    />		
+  
+  <Button
+        android:id="@+id/gw_bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_red_nor"
+        android:text="@string/accountlist_login_text"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+         />
+
+
+</RelativeLayout>

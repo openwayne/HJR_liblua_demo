@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 白色  -->
+	<color name="white">#ffffff</color>
+	<!-- 黑色  -->
+	<color name="black">#000000</color>
+	<!-- 透明色  -->
+	<color name="crystal">#00000000</color>
+	<!-- 深灰色  -->
+	<color name="dark_gray">#3a3a3a</color>
+	<!-- 灰色  -->
+	<color name="normal_gray">#565656</color>
+	<!-- 浅灰色  -->
+	<color name="light_gray">#858585</color>
+	<!-- 超浅灰色  -->
+	<color name="more_light_gray">#e3e3e3</color>
+	<color name="transparent">#00000000</color>
+	<color name="transparent66">#66000000</color>
+    <color name="text_num_gray">#333</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    
+    <color name="text_gray">#FAC2A3</color>
+    <color name="third_gray">#D9D9D9</color>
+    
+    
+    <color name="pure_red">#C3200E</color>
+    <color name="pic_gray">#f5f5f5</color>
+    <color name="hint_gray">#d2d2d2</color>
+	<color name="recharge_gray">#EEEEEE</color>
+	<color name="rechargehst_gray">#E1DFDF</color>
+	
+		<color name="text_orange">#F36618</color>
+	
+	<color name="blue">#53C6E1</color>
+	<color name="button_blue">#3DADD2</color>
+	<color name="line_gray">#797979</color>
+	<color name="orange">#EFF71D</color>
+    <color name="dark_orange">#FA6D01</color>
+    <color name="light_orange">#FFD217</color>
+	<color name="sky_blue">#0F95FB</color>
+	<color name="pic2_gray">#4d4d4d</color>
+	
+	<color name="brick_red">#B24D20</color>
+	<color name="refresh_white">#66FFFFFF</color>
+	
+	<color name="item_transparent">#00000000</color>
+	</resources>

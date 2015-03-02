@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@null">
+ 
+    
+   <TextView 
+    android:id="@+id/serviceinfo"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content" 
+    android:textSize="16dp"
+    android:textColor="@color/orange"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:ems="10"
+    />
+   
+   <TextView 
+    android:id="@+id/serviceinfo_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:textSize="16dp"
+    android:textColor="@color/orange"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@+id/serviceinfo"
+    android:layout_alignBottom="@+id/serviceinfo"
+    android:ems="10"
+    />
+   
+   
+   
+   <TextView 
+    android:id="@+id/change_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:textSize="16dp"
+    android:layout_alignParentRight="true"
+    android:textColor="@color/dark_orange"
+    android:layout_alignTop="@id/serviceinfo"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="48dp"
+       />
+
+
+
+</RelativeLayout>

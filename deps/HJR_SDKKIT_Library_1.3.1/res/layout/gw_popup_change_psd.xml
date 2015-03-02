@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/change_pwd_layout"
+     >
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/window_top_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/gw_user_center_change_password"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+			android:layout_alignParentBottom="true"
+	        android:background="#000000"
+	        android:orientation="horizontal">
+	    </LinearLayout>
+
+        <Button
+            android:id="@+id/gw_bt_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:src="@drawable/transparent" />
+
+    </RelativeLayout>
+    
+    <com.gameworks.sdkkit.entry.view.CustomEditText
+        android:id="@+id/gw_et_pwd_current"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativelayout1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#D2D2D2"
+        emailType="@string/password_yes"
+        hint="@string/gw_current_password"
+        >
+	</com.gameworks.sdkkit.entry.view.CustomEditText>
+    
+
+    <com.gameworks.sdkkit.entry.view.CustomEditText
+        android:id="@+id/gw_et_pwd_new"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/gw_et_pwd_current"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#D2D2D2"
+        hint="@string/gw_new_password2"
+        password="@string/password_yes"
+    />		
+  
+  <Button
+        android:id="@+id/gw_bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_red_nor"
+        android:text="@string/determine"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+         />
+
+
+</RelativeLayout>
