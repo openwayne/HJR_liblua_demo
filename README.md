@@ -19,52 +19,54 @@
 *  把`lua_sdk`文件夹下的android文件夹中的`工程`导入`eclipse`
 *  对项目的`AndroidManifest.xml`进行配置
     *    权限声明
-```xml
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.READ_LOGS"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-```
+    ```xml
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.READ_LOGS"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    ```
 
-    *    `application`节点内配置
-```xml
-    <application
-        android:allowBackup="true"
-        android:name="com.hjr.sdkkit.bridge.app.HJRSDKKitBaseApplication"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
-        <activity
-            android:name="com.kfmaster.sdkkit.KFMasterActivity"
-            android:configChanges="screenSize|keyboardHidden|orientation"
+    *   `application`节点内配置
+
+    ```xml
+        <application
+            android:allowBackup="true"
+            android:name="com.hjr.sdkkit.bridge.app.HJRSDKKitBaseApplication"
+            android:icon="@drawable/ic_launcher"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!-- 游戏密钥：填入gamekey -->
-        <meta-data
-            android:name="HJR_GAMEKEY"
-            android:value="d128360c051b94077118048bf92457fd" >
-        </meta-data>
-        <!--请勿修改！-->
-        <meta-data
-            android:name="HJR_CHANNEL"
-            android:value="\ 0103" >
-        </meta-data>
-        <!--注意：在打正式包之前，务必修改 HJR_DATA_URL_DEBUG = false-->
-        <meta-data
-            android:name="HJR_DATA_URL_DEBUG"
-            android:value="true" />
-    </application>
-```
-    *    `AndroidManifest.xml`配置注意事项
+            <activity
+                android:name="com.kfmaster.sdkkit.KFMasterActivity"
+                android:configChanges="screenSize|keyboardHidden|orientation"
+                android:label="@string/app_name" >
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+            <!-- 游戏密钥：填入gamekey -->
+            <meta-data
+                android:name="HJR_GAMEKEY"
+                android:value="d128360c051b94077118048bf92457fd" >
+            </meta-data>
+            <!--请勿修改！-->
+            <meta-data
+                android:name="HJR_CHANNEL"
+                android:value="\ 0103" >
+            </meta-data>
+            <!--注意：在打正式包之前，务必修改 HJR_DATA_URL_DEBUG = false-->
+            <meta-data
+                android:name="HJR_DATA_URL_DEBUG"
+                android:value="true" />
+        </application>
+    ```
+
+    *   `AndroidManifest.xml`配置注意事项
         *   游戏如果有自己的`application`， 需要继承至`com.hjr.sdkkit.bridge.app.HJRSDKKitBaseApplication`，并且配置`android:name="你自己的Application"`中。
         *   如果没有自己的`application`直接配置`android:name="com.hjr.sdkkit.bridge.app.HJRSDKKitBaseApplication"`中。
     *   程序内修改
