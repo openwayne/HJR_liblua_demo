@@ -6,11 +6,11 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
+import com.hjr.sdkkit.framework.mw.openapi.HJRSDKKitPlateformCore;
 import com.hjr.sdkkit.sdknative.SDKKitPlateformBusinessImplWrapper;
 import com.hjr.sdkkit.sdknative.SDKKitPlateformCallBackImplWrapper;
 import com.hjr.sdkkit.sdknative.SDKKitPlatformCollectionsImplWrapper;
 import com.hjr.sdkkit.sdknative.SDKKitPlatformJniHelper;
-import com.hjr.sdkkt.framework.mw.openapi.HJRSDKKitPlateformCore;
 
 public class AppActivity extends Cocos2dxActivity {
     private HJRSDKKitPlateformCore plateformSDK;
