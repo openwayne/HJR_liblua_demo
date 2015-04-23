@@ -1,4 +1,4 @@
-
+﻿
 ![cocos2d-x](https://camo.githubusercontent.com/62f509218415e5f677180a479fd65cfe54a17f04/687474703a2f2f7777772e636f636f7332642d782e6f72672f6174746163686d656e74732f3830312f636f636f733264785f706f7274726169742e706e67)
 
 
@@ -8,7 +8,6 @@
 ##1.介绍
 >   好接入为CP商提供一套第三方SDK接入解决方案，整个接入过程，不改变任何SDK的功能、特性、参数等，对于最终玩家而言是完全透明无感知的。 目的是让CP商能有更多时间更专注于游戏本身的品质，无需花费大量时间在对接第三方渠道上。
 
-![代码托管](http://ts2.mm.bing.net/th?id=HN.608047024633085982&w=154&h=153&c=7&rs=1&qlt=90&o=4&pid=1.7)
 [DEMO](https://github.com/openwayne/HJR_liblua_demo)
 [LIB](https://github.com/openwayne/liblua_sdkkit)
     
