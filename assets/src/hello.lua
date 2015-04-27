@@ -10,28 +10,32 @@ end
 
 
 ------------------------------------------------------------------------------------------------------------------------
-function SDKKitPlateformCallBackImplWrapper_loginCallBack(retStatus, retMessage, loginUserId, loginAuthToken)
-    print("ddddd");
-    print(retStatus, retMessage, loginUserId, loginAuthToken)
+function SDKKitPlateformCallBackImplWrapper_loginCallBack(retStatus, s_retMessage, s_loginUserId, s_loginUserName, s_loginAuthToken, s_loginOpenId)
+    print("lua SDKKitPlateformCallBackImplWrapper_loginCallBack");
+    print(retStatus, s_retMessage, s_loginUserId, s_loginUserName, s_loginAuthToken, s_loginOpenId)
     return true
 end
 
 function SDKKitPlateformCallBackImplWrapper_logoutCallBack(retStatus, s_retMessage)
+    print("lua SDKKitPlateformCallBackImplWrapper_logoutCallBack")
     print(retStatus, s_retMessage)
     return true
 end
 
-function SDKKitPlateformCallBackImplWrapper_payCallBack(retMessage, loginUserId, loginAuthToken, loginServerId, payKitOrderId)
-    print(retMessage, loginUserId, loginAuthToken, loginServerId, payKitOrderId)
+function SDKKitPlateformCallBackImplWrapper_payCallBack(retMessage, retStatus, s_retMessage, s_payKitOrderId)
+    print("lua SDKKitPlateformCallBackImplWrapper_payCallBack")
+    print(retStatus, s_retMessage, s_payKitOrderId)
     return true
 end
 
 function SDKKitPlateformCallBackImplWrapper_exitGameCallBack(retStatus, s_retMessage)
+    print("lua SDKKitPlateformCallBackImplWrapper_exitGameCallBack")
     print(retStatus, s_retMessage)
     return true
 end
 
 function SDKKitPlateformCallBackImplWrapper_getOrderResultCallBack(retStatus, s_retMessage)
+    print("lua SDKKitPlateformCallBackImplWrapper_getOrderResultCallBack")
     print(retStatus, s_retMessage)
     return true
 end
@@ -90,37 +94,25 @@ local function main()
                 sdkkit_login()
             end)
 
-        local m2 = cc.MenuItemImage:create("kitcenter.png", "kitcenter.png")
-        m2:registerScriptTapHandler(
-            function() 
-                cclog("sdkkit_kitCenter")
-                sdkkit_kitCenter()
-            end)
-
-        local m3 = cc.MenuItemImage:create("switchaccount.png", "switchaccount.png")
-        m3:registerScriptTapHandler(
-            function() 
-                cclog("sdkkit_switchAccount")
-                sdkkit_switchAccount()
-            end)
         local m4 = cc.MenuItemImage:create("pay.png", "pay.png")
         m4:registerScriptTapHandler(
             function() 
                 cclog("sdkkit_pay")
 
              sdkkit_pay(1, {
-                    payRate="100", 
-                    payProductNum="1", 
-                    payOrderId="111111", 
-                    payServerId="1", 
-                    payServerName="xxxxx", 
-                    payGameLevel="111", 
-                    payRoleId="121212", 
-                    payRoleLevel="11", 
-                    payRoleName="222222", 
-                    payUserId="1123123123", 
-                    payUserName="ddddddddd", 
-                    payBlance="10", 
+                    productId="100", 
+                    productName="1", 
+                    payProductNum="111111", 
+                    payOrderId="1", 
+                    payServerId="xxxxx", 
+                    payServerName="111", 
+                    payGameLevel="121212", 
+                    payRoleId="11", 
+                    payRoleLevel="222222", 
+                    payRoleName="1123123123", 
+                    payUserId="ddddddddd", 
+                    payUserName="10", 
+                    payBlance="",
                     extInfo="dandandandadn", 
                     })
             end)
@@ -143,12 +135,6 @@ local function main()
                 cclog("sdkkit_getOrderInfo")
                 sdkkit_getOrderInfo("11122233")
             end)
-        local m8 = cc.MenuItemImage:create("floatwindow.png", "floatwindow.png")
-        m8:registerScriptTapHandler(
-            function() 
-                cclog("sdkkit_floatWindow")
-                sdkkit_floatWindow(true)
-            end)
         local m9 = cc.MenuItemImage:create("exitgame.png", "exitgame.png")
         m9:registerScriptTapHandler(
             function() 
@@ -159,7 +145,7 @@ local function main()
         m10:registerScriptTapHandler(
             function() 
                 cclog("sdkkit_onLogin")
-                sdkkit_onLogin("1", "2", "3", "4")
+                sdkkit_onLogin("1", "2")
             end)
         local m11 = cc.MenuItemImage:create("onpay.png", "onpay.png")
         m11:registerScriptTapHandler(
@@ -177,7 +163,7 @@ local function main()
         m13:registerScriptTapHandler(
             function() 
                 cclog("sdkkit_onCreateRole")
-                sdkkit_onCreateRole("1", "2", "2", "2")
+                sdkkit_onCreateRole("1", "2", "2", "2", "2dd")
             end)
         local m14 = cc.MenuItemImage:create("onbuttonclk.png", "onbuttonclk.png")
         m14:registerScriptTapHandler(
@@ -189,31 +175,29 @@ local function main()
         m15:registerScriptTapHandler(
             function() 
                 cclog("sdkkit_onServerRoleInfo")
-                sdkkit_onServerRoleInfo("2", 1,"2", "2", "2")
+                sdkkit_onServerRoleInfo("2", "2", 1,"2", "2", "2", "2")
             end)
 
 
-        m1:setPosition(100, 30)
-        m2:setPosition(300, 30)
-        m3:setPosition(500, 30)
-        m4:setPosition(700, 30)
-        m5:setPosition(900, 30)
-        m6:setPosition(100, 230)
-        m7:setPosition(300, 230)
-        m8:setPosition(500, 230)
-        m9:setPosition(700, 230)
-        m10:setPosition(900, 230)
-        m11:setPosition(100, 470)
-        m12:setPosition(300, 430)
-        m13:setPosition(500, 430)
-        m14:setPosition(700, 430)
-        m15:setPosition(900, 430)
+        m1:setPosition(100, 430)
+        m4:setPosition(100, 380)
+        m5:setPosition(100, 330)
+        m6:setPosition(100, 280)
+        m7:setPosition(100, 230)
+        m9:setPosition(100, 180)
+
+        m10:setPosition(400, 430)
+        m11:setPosition(400, 380)
+        m12:setPosition(400, 330)
+        m13:setPosition(400, 280)
+        m14:setPosition(400, 230)
+        m15:setPosition(400, 180)
 
 
         
-        menuTools = cc.Menu:create(m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15)
-        local itemWidth = m8:getContentSize().width
-        local itemHeight = m8:getContentSize().height
+        menuTools = cc.Menu:create(m1, m4, m5, m6, m7, m9, m10, m11, m12, m13, m14, m15)
+        local itemWidth = m1:getContentSize().width
+        local itemHeight = m1:getContentSize().height
         menuTools:setPosition(origin.x + itemWidth/2, origin.y + itemHeight/2)
         layerMenu:addChild(menuTools)
 
